@@ -1,0 +1,44 @@
+// TO CHECK WHETHER A NUMBER IS A PERFECT SQUARE
+
+#include <stdio.h>
+int main()
+{
+  int i,n,flag=0;
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+    if(n==i*i)
+    flag=1;
+  }
+  if(flag==1)
+  printf("TRUE");
+  else
+  printf("FALSE");
+	return 0;
+}
+
+// FIBONACCI SERIES
+
+#include <stdio.h>
+int fib(int n)
+{
+  int i,c;
+  int a=0;
+  int b=1;
+  for(i=1;i<=n;i++)
+  {
+    printf("%d ",a);
+    c=a+b;
+    a=b;
+    b=c;
+  }
+}
+int main() 
+{
+  int n;
+  scanf("%d",&n);
+  fib(n);
+	return 0;
+}
+
+// 
