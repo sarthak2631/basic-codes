@@ -106,7 +106,7 @@ int main()
 
 int main()
 {
-    int n,i,j,k,count=0;
+    int n,i,j;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
@@ -124,6 +124,45 @@ int main()
         {
             if(j<i)
             printf("%d ",j);
+        }
+        
+        printf("\n");
+    }
+   
+    
+    return 0;
+}
+
+// pattern-5
+
+        1
+      2 1 2
+    3 2 1 2 3
+  4 3 2 1 2 3 4
+5 4 3 2 1 2 3 4 5
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n-i;j++)
+        {
+            printf("  ");
+        }
+        
+        for(j=i;j>=1;j--)
+        {
+            printf("%d ",j);
+        }
+        
+        for(j=1;j<n;j++)
+        {
+            if(j<i)
+            printf("%d ",j+1);
         }
         
         printf("\n");
